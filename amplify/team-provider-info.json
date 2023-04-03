@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-aimealplanner-staging-194814-authRole",
+      "UnauthRoleArn": "arn:aws:iam::085545611160:role/amplify-aimealplanner-staging-194814-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::085545611160:role/amplify-aimealplanner-staging-194814-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-aimealplanner-staging-194814-deployment",
+      "UnauthRoleName": "amplify-aimealplanner-staging-194814-unauthRole",
+      "StackName": "amplify-aimealplanner-staging-194814",
+      "StackId": "arn:aws:cloudformation:us-east-1:085545611160:stack/amplify-aimealplanner-staging-194814/79109bc0-d258-11ed-b6e8-0e4c2ab6fb3b",
+      "AmplifyAppId": "d279sj4bdjvh7w"
+    },
+    "categories": {
+      "auth": {
+        "AIMealPlanner": {}
+      }
+    }
+  }
+}

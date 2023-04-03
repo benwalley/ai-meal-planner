@@ -1,0 +1,27 @@
+type Calendar @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  date: String
+  mealType: String
+  recipeId: String
+}
+
+type Recipe @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Ingredients: [String]
+  Steps: [String]
+  ImageUrl: String
+  url: String
+  time: String
+  difficulty: String
+  servings: Int
+  videoUrl: String
+}
+
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  likedMeals: [String]
+  dislikedMeals: [String]
+  likedIngredients: [String]
+  dislikedIngredients: String
+}
