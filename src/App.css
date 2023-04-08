@@ -1,0 +1,30 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    min-height: 100vh;
+    background: var(--background-color);
+}
+
+* {
+    font-size: 16px;
+    box-sizing: border-box;
+
+    --theme-green: #6E8051;
+    --bright-green: #87a950;
+    --theme-red: #fd4c4c;
+    --background-color: #eeeeee;
+    --general-spacing: 10px;
+    --theme-primary: '#6E8051';
+    --text-color: 'black';
+
+    --xs-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    --s-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    --m-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    --l-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+input::placeholder {
+    color: #505050;
+}

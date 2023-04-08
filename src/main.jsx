@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Dashboard from './Dashboard'
-import './index.css'
+import Dashboard from './Components/Dashboard.jsx'
 import {
     createBrowserRouter,
     RouterProvider,
@@ -9,6 +8,8 @@ import {
 import {
     RecoilRoot
 } from 'recoil';
+import {ThemeProvider} from "@mui/material";
+import {mainTheme} from "./mainTheme.js";
 
 const router = createBrowserRouter([
     {
@@ -21,7 +22,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
       <RecoilRoot>
-        <RouterProvider router={router} />
+          <ThemeProvider theme={mainTheme}>
+            <RouterProvider router={router} />
+          </ThemeProvider>
       </RecoilRoot>
   </React.StrictMode>,
 )
